@@ -1,0 +1,19 @@
+{
+  "name": "@deepwhale-cn/dsh-web-snapshot",
+  "version": "0.1.0",
+  "description": "把 URL 抓成 Markdown（标题 / 正文 / 日期 / 来源），一次一批",
+  "type": "module",
+  "license": "MIT",
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "skill", "tool", "web-snapshot"],
+  "files": ["lib", "bin", "skill", "cordis.patch.yml", "tests/fixtures", "README.md", "LICENSE"],
+  "main": "./lib/index.js",
+  "exports": { ".": "./lib/index.js", "./package.json": "./package.json" },
+  "bin": { "dsh-web-snapshot": "./bin/cli.mjs" },
+  "engines": { "dsh": ">=0.1.0-rc.6 <0.3.0", "node": ">=18" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "dependencies": { "@deepwhale-cn/dsh-guard-core": "^0.5.1" },
+  "peerDependencies": { "@deepseek-ai/dsh-skill": "*" },
+  "repository": { "type": "git", "url": "git+https://github.com/feely0208/dsh-web-snapshot.git" },
+  "homepage": "https://www.deepwhale.org.cn/skills.html",
+  "bugs": { "url": "https://github.com/feely0208/dsh-web-snapshot/issues" }
+}

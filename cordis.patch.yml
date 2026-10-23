@@ -1,0 +1,4 @@
+# @deepwhale-cn/dsh-web-snapshot 的组合层：装上即注册 web-snapshot skill
+- insert:
+    - id: web-snapshot
+      name: '@deepwhale-cn/dsh-web-snapshot'
